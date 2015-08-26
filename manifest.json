@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Lounge Peek",
+  "version": "0.1",
+
+  "description": "An extension to get a quick peek at current bets listed on CSGO Lounge.",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Check current bets!"
+  },
+
+  "author": "dkim616",
+  "permissions": [
+    "activeTab"
+  ]
+}
