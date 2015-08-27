@@ -1,0 +1,25 @@
+body {
+	width: 350px;
+
+	background-color: #444444;
+	background-image: url("background-image.png");
+	background-repeat: repeat;
+}
+
+#logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.matchBox {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	height: 60px;
+
+	background-color: #888888;
+	opacity: 1;
+}
