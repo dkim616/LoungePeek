@@ -1,11 +1,13 @@
 var matches_json;
 var matches = [];
 
-YUI().use('yql', function(Y) {
-	Y.YQL("select * from html where url='http://www.csgolounge.com'", function(r) {
-		matches_json = (r.query.results.body.main.section[1].article.div);
-		createBoxes();
-	});
+document.addEventListener('DOMContentLoaded', function() {
+	// YUI().use('yql', function(Y) {
+	// 	Y.YQL("select * from html where url='http://www.csgolounge.com'", function(r) {
+	// 		matches_json = (r.query.results.body.main.section[1].article.div);
+	// 		createBoxes();
+	// 	});
+	// });
 });
 
 var createBoxes = function() {
@@ -54,11 +56,11 @@ var createBoxes = function() {
 	});
 
 	matches.forEach(function(match, index) {
-		var fragment = create("\
-			<div class='matchBox'>\
-			\
-			</div>\
-			");
+		var fragment = create(
+			"<div class='matchBox'>" +
+			index +
+			"</div>"
+			);
 		document.getElementById("boxes").appendChild(fragment);
 	});
 	console.log(matches);
