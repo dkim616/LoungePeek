@@ -1,6 +1,8 @@
 # Lounge Peek
 
-This extension allows users to quickly view upcoming matches on CSGO Lounge.
+(In progress)
+
+This extension will allows users to quickly view upcoming matches on CSGO Lounge.
 
 #### Available Information
 - Time until match or time passed
